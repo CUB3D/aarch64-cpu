@@ -125,8 +125,12 @@ mod midr_el1;
 mod mpidr_el1;
 mod mpuir_el1;
 mod mpuir_el2;
+mod mvfr0_el1;
+mod mvfr1_el1;
+mod mvfr2_el1;
 mod oslar_el1;
 mod par_el1;
+mod pmuserenr_el0;
 #[cfg(arm_architecture = "v8-r")]
 mod prbar_el1;
 #[cfg(arm_architecture = "v8-r")]
@@ -137,10 +141,6 @@ mod prlar_el1;
 mod prlar_el2;
 mod prselr_el1;
 mod prselr_el2;
-mod mvfr0_el1;
-mod mvfr1_el1;
-mod mvfr2_el1;
-mod pmuserenr_el0;
 mod revidr_el1;
 mod rvbar_el1;
 mod rvbar_el2;
@@ -295,8 +295,12 @@ pub use midr_el1::MIDR_EL1;
 pub use mpidr_el1::MPIDR_EL1;
 pub use mpuir_el1::MPUIR_EL1;
 pub use mpuir_el2::MPUIR_EL2;
+pub use mvfr0_el1::MVFR0_EL1;
+pub use mvfr1_el1::MVFR1_EL1;
+pub use mvfr2_el1::MVFR2_EL1;
 pub use oslar_el1::OSLAR_EL1;
 pub use par_el1::PAR_EL1;
+pub use pmuserenr_el0::PMUSERENR_EL0;
 #[cfg(arm_architecture = "v8-r")]
 pub use prbar_el1::PRBAR_EL1;
 #[cfg(arm_architecture = "v8-r")]
@@ -307,10 +311,6 @@ pub use prlar_el1::PRLAR_EL1;
 pub use prlar_el2::PRLAR_EL2;
 pub use prselr_el1::PRSELR_EL1;
 pub use prselr_el2::PRSELR_EL2;
-pub use mvfr0_el1::MVFR0_EL1;
-pub use mvfr1_el1::MVFR1_EL1;
-pub use mvfr2_el1::MVFR2_EL1;
-pub use pmuserenr_el0::PMUSERENR_EL0;
 pub use revidr_el1::REVIDR_EL1;
 pub use rvbar_el1::RVBAR_EL1;
 pub use rvbar_el2::RVBAR_EL2;
